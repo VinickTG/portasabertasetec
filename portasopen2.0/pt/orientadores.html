@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créditos - Orientadores</title>
+    <link rel="icon" type="image/jpg" href="../img/icon.jpg">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a style="margin-right: 20px;" href="../../index.html" class="logo">GAME<span>EVO</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="../../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html" class="nav-link">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="aplicacoes.html" class="nav-link">Aplicações</a>
+                    </li>
+                    <li>
+                        <a href="bibliografia.html" class="nav-link">Bibliografia</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link active">Créditos</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Orientadores</a>
+                            </li>
+                            <li>
+                                <a href="desenvolvedores.html">Desenvolvedores</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                    <li class="lang">
+                        <a href="#" class="nav-link active">
+                            <img src="../img/pt.webp" width="50%"></a>
+                    </li>
+                    <li class="lang">
+                        <a href="../en/orientadores.html" class="nav-link">
+                            <img src="../img/en.png" width="50%"></a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="p-box"
+            style="background: var(--azul-escuro); padding: 2rem; border-radius: 20px; border: 1px solid rgba(30, 136, 229, 0.2); margin-bottom: 3rem;">
+            <h1>ORIENTADORES DO PROJETO</h1>
+           
+        </div>
+
+        <div class="grid-container"
+            style="grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); margin-bottom: 3rem;">
+            <div class="card" style="border-radius: 20px; padding: 2.5rem;">
+                <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div style="font-size: 3.5rem;"></div>
+                    <div>
+                        <h2 style="margin-bottom: 0.3rem; border: none; padding: 0;"> Célia Aparecida<br> Barufaldi</h2>
+                        <p
+                            style="font-family: var(--font-sub); color: var(--azul-neon); text-transform: uppercase; margin: 0; font-weight: bold; letter-spacing: 1px;">
+                            Disciplina: PWI</p>
+                    </div>
+                </div>
+                <div
+                    style="border: 1px dashed var(--azul-medio); padding: 1.5rem; border-radius: 12px; background: rgba(7, 17, 31, 0.4);">
+                    <p style="margin-bottom: 0; font-style: italic; text-align: left; color: var(--cinza-azulado);">
+                       <n>Graduação:</n>Tecnologia e processamento de dados<br><n>Pós-Graduação:</n>Especialista em analise de sistemas<br><n>Mestrado:</n>Especialista em redes e segurança de dados</p>
+                </div>
+            </div>
+            <div class="card" style="border-radius: 20px; padding: 2.5rem;">
+                <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div style="font-size: 3.5rem;"></div>
+                    <div>
+                        <h2 style="margin-bottom: 0.3rem; border: none; padding: 0;">  Waldir Ferreira da Silva Junior</h2>
+                        <p
+                            style="font-family: var(--font-sub); color: var(--azul-neon); text-transform: uppercase; margin: 0; font-weight: bold; letter-spacing: 1px;">
+                            Disciplina: Inglês</p>
+                    </div>
+                </div>
+                <div
+                    style="border: 1px dashed var(--azul-medio); padding: 1.5rem; border-radius: 12px; background: rgba(7, 17, 31, 0.4);">
+                    <p style="margin-bottom: 0; font-style: italic; text-align: left ;; color: var(--cinza-azulado);">
+                      Graduação:</n>Letras<br><n>Pós-Graduação:</n>Psicopedagogia<br><n>Mestrado:</n>sEducação</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a class="ancora" href="#"><img src="../img/seta.png" width="50" height="50"></a>
+        <p><strong>ETEC DE HORTOLÂNDIA 2026</strong> — © Todos os direitos reservados</p>
+        <p>Trabalho acadêmico sem fins lucrativos</p>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.menu-toggle').classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Evolução dos Games - Aplicações</title>
+    <link rel="icon" type="image/jpg" href="../img/icon.jpg">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a style="margin-right: 20px;" href="../../index.html" class="logo">GAME<span>EVO</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="../../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html" class="nav-link">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link active">Aplicações</a>
+                    </li>
+                    <li>
+                        <a href="bibliografia.html" class="nav-link">Bibliografia</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Créditos</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="orientadores.html">Orientadores</a>
+                            </li>
+                            <li>
+                                <a href="desenvolvedores.html">Desenvolvedores</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                    <li class="lang">
+                        <a href="#" class="nav-link active">
+                            <img src="../img/pt.webp" width="50%"></a>
+                    </li>
+                    <li class="lang">
+                        <a href="../en/aplicacoes.html" class="nav-link">
+                            <img src="../img/en.png" width="50%"></a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <h1>APLICAÇÕES</h1>
+
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/mariokart.webp" alt="Descrição da imagem 1">
+                    <div class="carousel-caption">
+                        <h2>Entretenimento</h2>
+                        <p>O jogos são uma das maiores forma de entretenimento atualmente, com você podendo tanto
+                            joga-los para se divertir, ver videos sobre eles e até mesmo ver filmes ou séries baseado
+                            neles, além de tudo isso, em sua maioria, serem muito acessíveis para as pessoas.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/mineeducation.avif" alt="Descrição da imagem 2">
+                    <div class="carousel-caption">
+                        <h2>Educação</h2>
+                        <p>Os jogos podem ajudar na educação pois podem funcionar como ferramenta de desenvolvimento
+                            cognitivo, estimulando raciocínio lógico, criatividade e resolução de problemas, habilidades
+                            sociais, pois muitos jogos promovem a cooperação e respeito às regras e pode ajudar também o
+                            engajamento, já que podem quebrar barreiras de resistência a conteúdos difíceis e capturar a
+                            atenção do público de forma natural. Além de existir também muitos jogos focados apenas no
+                            ensinamento de conteúdos escolares.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/interacao.jpg" alt="Descrição da imagem 2">
+                    <div class="carousel-caption">
+                        <h2>Interação</h2>
+                        <p>Muitos jogos oferecem opções multi-jogadores, cobrando a interação dos jogadores com outros,
+                            pelo mundo todo, de forma online, ou de forma local, podendo jogar com vários amigos em sua
+                            casa, por exemplo. Nesse tipo de jogo, você pode jogar de forma cooperativa ou contra outras
+                            pessoas.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="mudarSlide(-1)">❮</button>
+            <button class="carousel-control next" onclick="mudarSlide(1)">❯</button>
+        </div>
+    </main>
+    <script>
+        let indexAtual = 0;
+
+        function mudarSlide(direcao) {
+            const itens = document.querySelectorAll('.carousel-item');
+            indexAtual += direcao;
+
+            if (indexAtual >= itens.length) {
+                indexAtual = 0;
+            }
+            if (indexAtual < 0) {
+                indexAtual = itens.length - 1;
+            }
+
+            const deslocamento = -indexAtual * 100;
+            document.querySelector('.carousel-inner').style.transform = `translateX(${deslocamento}%)`;
+        }
+
+
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.menu-toggle').classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+    </script>
+    <footer>
+        <a class="ancora" href="#"><img src="../img/seta.png" width="50" height="50"></a>
+        <p><strong>ETEC DE HORTOLÂNDIA 2026</strong> — © Todos os direitos reservados</p>
+        <p>Trabalho acadêmico sem fins lucrativos</p>
+    </footer>
+</body>
+
+</html>

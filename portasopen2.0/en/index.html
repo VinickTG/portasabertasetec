@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Evolution of Games - Home</title>
+    <link rel="icon" type="image/jpg" href="../img/icon.jpg">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a style="margin-right: 20px;" href="#" class="logo">GAME<span>EVO</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="aplicacoes.html" class="nav-link">Applications</a>
+                    </li>
+                    <li>
+                        <a href="bibliografia.html" class="nav-link">Bibliography</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Credits</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="orientadores.html">Advisors</a>
+                            </li>
+                            <li>
+                                <a href="desenvolvedores.html">Developers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="lang">
+                        <a href="../../index.html" class="nav-link">
+                            <img src="../img/pt.webp" width="50%"></a>
+                    </li>
+                    <li class="lang">
+                        <a href="#" class="nav-link active">
+                            <img src="../img/en.png" width="50%"></a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <h1>THE EVOLUTION OF GAMES</h1>
+        <div class="grid-container">
+            <img src="../img/arcade.jpg" width="360" height="360">
+            <img src="../img/console.jpg" width="360" height="360">
+            <img src="../img/computador.jpg" width="360" height="360">
+        </div>
+    </main>
+    <footer>
+        <a class="ancora" href="#"><img src="../img/seta.png" width="50" height="50"></a>
+        <p><strong>ETEC DE HORTOLÂNDIA 2026</strong> — © All rights reserved</p>
+        <p>Academic non-profit project</p>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.menu-toggle').classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
