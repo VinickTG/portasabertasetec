@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Evolution of Games - Applications</title>
+    <link rel="icon" type="image/jpg" href="../img/icon.jpg">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a style="margin-right: 20px;" href="index.html" class="logo">GAME<span>EVO</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link active">Applications</a>
+                    </li>
+                    <li>
+                        <a href="bibliografia.html" class="nav-link">Bibliography</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Credits</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="orientadores.html">Advisors</a>
+                            </li>
+                            <li>
+                                <a href="desenvolvedores.html">Developers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="lang">
+                        <a href="../pt/aplicacoes.html" class="nav-link">
+                            <img src="../img/pt.webp" width="50%"></a>
+                    </li>
+                    <li class="lang">
+                        <a href="#" class="nav-link active">
+                            <img src="../img/en.png" width="50%"></a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <h1>APPLICATIONS</h1>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/mariokart.webp" alt="Descrição da imagem 1">
+                    <div class="carousel-caption">
+                        <h2>Entertainment</h2>
+                        <p>Video games are one of the most popular forms of entertainment today. People can play them
+                            for fun, watch videos about them, and even watch movies or television series based on them.
+                            In addition, most video games are highly accessible to the general public.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/mineeducation.avif" alt="Descrição da imagem 2">
+                    <div class="carousel-caption">
+                        <h2>Education</h2>
+                        <p>Video games can contribute to education because they can serve as tools for cognitive
+                            development, stimulating logical reasoning, creativity, and problem-solving skills. They can
+                            also promote social skills, as many games encourage cooperation and respect for rules.
+                            Furthermore, games can increase engagement, as they can overcome resistance to difficult
+                            subjects and capture the audience's attention in a natural way. There are also many games
+                            specifically designed to teach and reinforce school-related content.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/interacao.jpg" alt="Descrição da imagem 2">
+                    <div class="carousel-caption">
+                        <h2>Interaction</h2>
+                        <p>Many video games offer multiplayer options, allowing players to interact with others from all
+                            around the world through online platforms or to play locally with several friends in the
+                            same place, for example. In this type of game, players can either cooperate with one another
+                            or compete against other people.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="mudarSlide(-1)">❮</button>
+            <button class="carousel-control next" onclick="mudarSlide(1)">❯</button>
+        </div>
+    </main>
+    <script>
+        let indexAtual = 0;
+
+        function mudarSlide(direcao) {
+            const itens = document.querySelectorAll('.carousel-item');
+            indexAtual += direcao;
+
+            if (indexAtual >= itens.length) {
+                indexAtual = 0;
+            }
+            if (indexAtual < 0) {
+                indexAtual = itens.length - 1;
+            }
+
+            const deslocamento = -indexAtual * 100;
+            document.querySelector('.carousel-inner').style.transform = `translateX(${deslocamento}%)`;
+        }
+    </script>
+    <footer>
+        <a class="ancora" href="#"><img src="../img/seta.png" width="50" height="50"></a>
+        <p><strong>ETEC DE HORTOLÂNDIA 2026</strong> — © All rights reserved</p>
+        <p>Academic non-profit project</p>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.menu-toggle').classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
