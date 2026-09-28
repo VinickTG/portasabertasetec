@@ -745,11 +745,6 @@ footer p {
     .grid-container {
         grid-template-columns: 1fr;
     }
-    .grid-container {
-    display: grid;
-    /* Define o layout de colunas para telas grandes */
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-}
 
     .grid-container img {
         width: 80vw;
