@@ -42,7 +42,7 @@
                         <a href="#" class="nav-link">Contact</a>
                     </li>
                     <li class="lang">
-                        <a href="../pt/contato.html" class="nav-link">
+                        <a href="../pt/contato.html" class="nav-link active">
                             <img src="../img/pt.webp" width="50%"></a>
                     </li>
                     <li class="lang">
@@ -65,25 +65,25 @@
         <form id="contactForm" onsubmit="return valContato(event)" class="card">
             <div class="form-group">
                 <label for="nome">Name</label>
-                <input type="text" id="nome" class="form-control" required placeholder="Enter your full name"
+                <input type="text" id="nome" class="form-control" required placeholder="(*REQUIRED) Enter your full name"
                     pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇÑ\s]+$">
             </div>
 
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" class="form-control" required placeholder="youremail@provider.com">
+                <input type="email" id="email" class="form-control" required placeholder="(*REQUIRED) youremail@provider.com">
             </div>
 
             <div class="form-group">
                 <label for="telefone">Phone</label>
                 <input type="tel" id="telefone" class="form-control" required pattern="[0-9\s\-\(\)\+]{10,15}"
-                    placeholder="Phone number">
+                    placeholder="(*REQUIRED) Phone number">
             </div>
 
             <div class="form-group">
                 <label for="avaliacao">Rate our website</label>
                 <select id="avaliacao" class="form-control" required style="background-color: var(--azul-profundo);">
-                    <option value="" disabled selected>Choose a rating from 0 to 5</option>
+                    <option value="" disabled selected>(*REQUIRED) Choose a rating from 0 to 5</option>
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
