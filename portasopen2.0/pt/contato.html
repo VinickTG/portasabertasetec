@@ -46,7 +46,7 @@
                             <img src="../img/pt.webp" width="50%"></a>
                     </li>
                     <li class="lang">
-                        <a href="../en/contato.html" class="nav-link">
+                        <a href="../en/contato.html" class="nav-link active">
                             <img src="../img/en.png" width="50%"></a>
                     </li>
                 </ul>
@@ -65,25 +65,25 @@
         <form id="contactForm" onsubmit="return valContato(event)" class="card">
             <div class="form-group">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" class="form-control" required placeholder="Insira seu nome completo"
+                <input type="text" id="nome" class="form-control" required placeholder="(*OBRIGATÓRIO) Insira seu nome completo"
                     pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇÑ\s]+$">
             </div>
 
             <div class="form-group">
                 <label for="email">E-mail</label>
-                <input type="email" id="email" class="form-control" required placeholder="seuemail@provedor.com">
+                <input type="email" id="email" class="form-control" required placeholder="(*OBRIGATÓRIO) seuemail@provedor.com">
             </div>
 
             <div class="form-group">
                 <label for="telefone">Telefone</label>
                 <input type="tel" id="telefone" class="form-control" required pattern="[0-9\s\-\(\)\+]{10,15}"
-                    placeholder="(19) 99999-9999">
+                    placeholder="(*OBRIGATÓRIO) (19) 99999-9999">
             </div>
 
             <div class="form-group">
                 <label for="avaliacao">Avalie nosso site</label>
                 <select id="avaliacao" class="form-control" required style="background-color: var(--azul-profundo);">
-                    <option value="" disabled selected>Escolha uma nota de 0 a 5</option>
+                    <option value="" disabled selected>(*OBRIGATÓRIO) Escolha uma nota de 0 a 5</option>
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
