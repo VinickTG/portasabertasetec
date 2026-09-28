@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Evolução dos Games - Home</title>
+    <link rel="icon" type="image/jpg" href="portasopen2.0/img/icon.jpg">
+    <link rel="stylesheet" href="portasopen2.0/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a style="margin-right: 20px;" href="index.html" class="logo">GAME<span>EVO</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="portasopen2.0/pt/sobre.html" class="nav-link">Sobre</a></li>
+                    <li><a href="portasopen2.0/pt/aplicacoes.html" class="nav-link">Aplicações</a></li>
+                    <li><a href="portasopen2.0/pt/bibliografia.html" class="nav-link">Bibliografia</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Créditos</a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="portasopen2.0/pt/orientadores.html">Orientadores</a></li>
+                            <li><a href="portasopen2.0/pt/desenvolvedores.html">Desenvolvedores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="portasopen2.0/pt/contato.html" class="nav-link">Contato</a></li>
+                    <li></li>
+                    <li class="lang"><a href="#" class="nav-link active"><img src="portasopen2.0/img/pt.webp"
+                                width="50%"></a></li>
+                    <li class="lang"><a href="portasopen2.0/en/index.html" class="nav-link"><img
+                                src="portasopen2.0/img/en.png" width="50%"></a></li>
+                </ul>
+
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <h1>A EVOLUÇÃO DOS GAMES</h1>
+
+        <div class="grid-container">
+
+            <img src="portasopen2.0/img/arcade.jpg" width="360" height="360">
+            <img src="portasopen2.0/img/console.jpg" width="360" height="360">
+            <img src="portasopen2.0/img/computador.jpg" width="360" height="360">
+        </div>
+    </main>
+    <footer>
+        <a class="ancora" href="#"><img src="portasopen2.0/img/seta.png" width="50" height="50"></a>
+        <p><strong>ETEC DE HORTOLÂNDIA 2026</strong> — © Todos os direitos reservados</p>
+        <p>Trabalho acadêmico sem fins lucrativos</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.menu-toggle').classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

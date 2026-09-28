@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credits - Developers</title>
+    <link rel="icon" type="image/jpg" href="../img/icon.jpg">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a style="margin-right: 20px;" href="index.html" class="logo">GAME<span>EVO</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="aplicacoes.html" class="nav-link">Applications</a>
+                    </li>
+                    <li>
+                        <a href="bibliografia.html" class="nav-link">Bibliography</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link active">Credits</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="orientadores.html">Advisors</a>
+                            </li>
+                            <li>
+                                <a href="#">Developers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="lang">
+                        <a href="../pt/desenvolvedores.html" class="nav-link">
+                            <img src="../img/pt.webp" width="50%"></a>
+                    </li>
+                    <li class="lang">
+                        <a href="#" class="nav-link active">
+                            <img src="../img/en.png" width="50%"></a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="p-box"
+            style="background: var(--azul-escuro); padding: 2rem; border-radius: 20px; border: 1px solid rgba(30, 136, 229, 0.2); margin-bottom: 3rem;">
+            <h1>DEVELOPMENT TEAM</h1>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto;">Academic Project — Open Doors 2026 — ETEC
+                Hortolândia</p>
+        </div>
+
+
+        <div class="card-des" style="border-radius: 20px; text-align: center;">
+            <div style="font-size: 3rem; margin-bottom: 0.5rem;"><img class="des" src="../img/icone.png" width="50"
+                    height="50">
+            </div>
+            <h2 class="des">Vinícius Delbó Martins Candido</h2>
+        </div>
+
+        <div class="card-des" style="border-radius: 20px; text-align: center;">
+            <div style="font-size: 3rem; margin-bottom: 0.5rem; "><img class="des" src="../img/icone.png" width="50"
+                    height="50">
+            </div>
+            <h2 class="des">Rafael Marcos Cipriano da Silva</h2>
+        </div>
+
+        <div class="card-des" style="border-radius: 20px; text-align: center;">
+            <div style="font-size: 3rem; margin-bottom: 0.5rem;"><img class="des" src="../img/icone.png" width="50"
+                    height="50">
+            </div>
+            <h2 class="des">Rafael Reis de Souza</h2>
+        </div>
+
+        <div class="card-des" style="border-radius: 20px; text-align: center;">
+            <div style="font-size: 3rem; margin-bottom: 0.5rem;"><img class="des" src="../img/icone.png" width="50"
+                    height="50">
+            </div>
+            <h2 class="des">Vitor Hugo Faleiros</h2>
+        </div>
+
+    </main>
+    <footer>
+        <a class="ancora" href="#"><img src="../img/seta.png" width="50" height="50"></a>
+        <p><strong>ETEC DE HORTOLÂNDIA 2026</strong> — © All rights reserved</p>
+        <p>Academic non-profit project</p>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.menu-toggle').classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
